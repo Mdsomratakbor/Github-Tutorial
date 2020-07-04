@@ -8,3 +8,7 @@
 - `Using shallow options to partially clone repositories`
 - `Git URL syntax and supported protocols`
 - `On the setting up a repository guide, we covered a basic use case of git clone. This page will explore more complex cloning and configuration scenarios.`
+
+### Purpose: repo-to-repo collaboration development copy
+
+`If a project has already been set up in a central repository, the git clone command is the most common way for users to obtain a development copy. Like git init, cloning is generally a one-time operation. Once a developer has obtained a working copy, all version control operations and collaborations are managed through their local repository.`
