@@ -31,6 +31,8 @@ git clone is primarily used to point to an existing repo and make a clone or cop
 As a convenience, cloning automatically creates a remote connection called "origin" pointing back to the original repository. This makes it very easy to interact with a central repository. This automatic connection is established by creating Git refs to the remote branch heads under refs/remotes/origin and by initializing remote.origin.url and remote.origin.fetch configuration variables.
 
 An example demonstrating using git clone can be found on the setting up a repository guide. The example below demonstrates how to obtain a local copy of a central repository stored on a server accessible at example.com using the SSH username john:
-<code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">ssh</span>://john@example.com/path/to/my-project.git
+
+
+<pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">ssh</span>://john@example.com/path/to/my-project.git
 cd my-project
-<span class="hljs-comment"># Start working on the project</span></code>
+<span class="hljs-comment"># Start working on the project</span></code></pre>
