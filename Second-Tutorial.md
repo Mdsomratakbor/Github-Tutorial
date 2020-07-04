@@ -21,3 +21,6 @@ This makes collaborating with Git fundamentally different than with SVN. Whereas
 <img src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=1109" alt="Git Tutorial: Repo to Working Copy Collaboration" class="lozad">
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:5d68ce55-59a7-4840-a896-eb2014a9f17b/02.svg?cdnVersion=1109" alt="Git Tutorial: Repo to Repo Collaboration" class="lozad">
+
+
+`Of course, there’s nothing stopping you from giving certain Git repos special meaning. For example, by simply designating one Git repo as the “central” repository, it’s possible to replicate a centralized workflow using Git. The point is, this is accomplished through conventions rather than being hardwired into the VCS itself.`
