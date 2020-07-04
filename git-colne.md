@@ -38,3 +38,14 @@ cd my-project
 <span class="hljs-comment"># Start working on the project</span></code></pre>
 
 `The first command initializes a new Git repository in the my-project folder on your local machine and populates it with the contents of the central repository. Then, you can cd into the project and start editing files, committing snapshots, and interacting with other repositories. Also note that the .git extension is omitted from the cloned repository. This reflects the non-bare status of the local copy.`
+
+### Cloning to a specific folder
+
+<pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">&lt;repo</span>&gt; <span class="hljs-tag">&lt;directory&gt;</span></code></pre>
+
+`Clone the repository located at <repo> into the folder called ~<directory>! on the local machine.`
+
+### Cloning a specific tag
+`<pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">--branch</span> <span class="hljs-tag">&lt;tag&gt;</span> <span class="hljs-tag">&lt;repo&gt;</span></code></pre>`
+
+`Clone the repository located at <repo> and only clone the ref for <tag>.`
