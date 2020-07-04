@@ -15,3 +15,6 @@ Git is compatible with all the Operating Systems that are being used these days.
 
 ### Which is a source code management tool?
 A Source Code Management (SCM) is a software tool used by programmers to manage the source codes. SCMs are used to give versions/revisions to the program. Each version is given a timestamp and includes the person responsible for the change. Even various versions can be compared and merged with other versions.
+
+### Why source code management is important?
+A source code management system allows multiple developers to access and change different areas of the code, without interfering with each other's work. This is a big benefit for large teams of developers. Version history. The system will keep a history of all saved changes to the code
