@@ -36,3 +36,5 @@ An example demonstrating using git clone can be found on the setting up a reposi
 <pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">ssh</span>://john@example.com/path/to/my-project.git
 cd my-project
 <span class="hljs-comment"># Start working on the project</span></code></pre>
+
+`The first command initializes a new Git repository in the my-project folder on your local machine and populates it with the contents of the central repository. Then, you can cd into the project and start editing files, committing snapshots, and interacting with other repositories. Also note that the .git extension is omitted from the cloned repository. This reflects the non-bare status of the local copy.`
