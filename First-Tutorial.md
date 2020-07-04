@@ -12,3 +12,6 @@ Having a distributed system, Git allows the users to work simultaneously on the 
 
 ### Compatibility:
 Git is compatible with all the Operating Systems that are being used these days. Git repositories can also access the repositories of other Version Control Systems like SVN, CVK, etc. Git can directly access the remote repositories created by these SVNs. So, the users who were not using Git in the first place can also switch to Git without going through the process of copying their files from the repositories of other VCS’s into Git-VCS. Git can also access the central repositories of other VCSs. Hence, one can perform work on Git-SVN and use the central repository as the same. Git has a CVS server emulation, which enables the use of existing CVS clients and IDE plugins to access Git repositories.
+
+### Which is a source code management tool?
+A Source Code Management (SCM) is a software tool used by programmers to manage the source codes. SCMs are used to give versions/revisions to the program. Each version is given a timestamp and includes the person responsible for the change. Even various versions can be compared and merged with other versions.
