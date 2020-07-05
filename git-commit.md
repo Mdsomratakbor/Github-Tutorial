@@ -23,3 +23,5 @@
 
 ### Usage Examples
 <hr>
+
+**For a basic workflow, you can use the "git add" command to stage changes for the next commit. The actual commit command will then wrap up the mentioned changes in a new commit object:**
