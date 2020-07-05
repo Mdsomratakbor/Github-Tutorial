@@ -12,5 +12,5 @@
 
 ### Important Options
 
-### -m <message>
+### -m "message"
 `Sets the commit's message. Make sure to provide a concise description that helps your teammates (and yourself) understand what happened.`
