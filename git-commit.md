@@ -25,3 +25,13 @@
 <hr>
 
 **For a basic workflow, you can use the "git add" command to stage changes for the next commit. The actual commit command will then wrap up the mentioned changes in a new commit object:**
+
+<pre><code>git add index.html css/styles.css
+git commit -m "Change titles and styling on homepage"</code></pre>
+`If you have lots of changed files in your working copy - and want all of them included in the next commit - you can make use of the "-a" parameter and thereby omit the "git add" step:`
+<pre><code>git commit -a -m "Change titles and styling on homepage"</code></pre>
+
+`The "--amend" option comes in handy, for example, when you mistyped the last commit's message or forgot to add a change. The following example will correct the very last commit by overwriting its message and adding another change:`
+
+<pre><code>git add forgotten-change.js
+git commit --amend -m "New commit message"</code></pre>
