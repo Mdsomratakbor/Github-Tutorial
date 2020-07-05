@@ -6,5 +6,7 @@
 
 ### Usage
 
-`<pre><code class="hljs ebnf"><span class="hljs-attribute">git status</span></code></pre>`
+<pre><code class="hljs ebnf"><span class="hljs-attribute">git status</span></code></pre>
+
+`List which files are staged, unstaged, and untracked.`
 
