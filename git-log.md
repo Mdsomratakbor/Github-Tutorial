@@ -6,3 +6,12 @@
 <img src="https://wac-cdn.atlassian.com/dam/jcr:52d530ce-7f51-48e3-920b-a18f776048d3/01.svg?cdnVersion=1109" alt="Git Tutorial: git status vs. git log" class="lozad">
 
 `Log output can be customized in several ways, from simply filtering commits to displaying them in a completely user-defined format. Some of the most common configurations of git log are presented below.`
+
+### Usage
+<pre><code class="hljs 1c">git <span class="hljs-built_in">log</span></code></pre>
+
+`Display the entire commit history using the default formatting. If the output takes up more than one screen, you can use Space to scroll and q to exit.`
+
+<pre><code class="hljs bash">git <span class="hljs-built_in">log</span> -n &lt;<span class="hljs-built_in">limit</span>&gt;</code></pre>
+
+`Limit the number of commits by <limit>. For example, git log -n 3 will display only 3 commits.`
