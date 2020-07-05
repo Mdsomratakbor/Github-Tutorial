@@ -36,3 +36,18 @@
 
 `For this reason, Git lets you completely ignore files by placing paths in a special file called .gitignore. Any files that you'd like to ignore should be included on a separate line, and the * symbol can be used as a wildcard. For example, adding the following to a .gitignore file in your project root will prevent compiled Python modules from appearing in git status:`
 <pre><code class="hljs css">*<span class="hljs-selector-class">.pyc</span></code></pre>
+
+### Example
+`It's good practice to check the state of your repository before committing changes so that you don't accidentally commit something you don't mean to. This example displays the repository status before and after staging and committing a snapshot:`
+
+<pre><code class="hljs shell"><span class="hljs-meta">#</span><span class="bash"> Edit hello.py</span>
+git status
+<span class="hljs-meta">#</span><span class="bash"> hello.py is listed under <span class="hljs-string">"Changes not staged for commit"</span></span>
+git add hello.py
+git status
+<span class="hljs-meta">#</span><span class="bash"> hello.py is listed under <span class="hljs-string">"Changes to be committed"</span></span>
+git commit
+git status
+<span class="hljs-meta">#</span><span class="bash"> nothing to commit (working directory clean)</span></code></pre>
+
+`The first status output will show the file as unstaged. The git add action will be reflected in the second git status, and the final status output will tell you that there is nothing to commit—the working directory matches the most recent commit. Some Git commands (e.g., git merge) require the working directory to be clean so that you don't accidentally overwrite changes.`
