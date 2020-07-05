@@ -11,7 +11,13 @@
 <pre><code class="hljs 1c">git <span class="hljs-built_in">log</span></code></pre>
 
 `Display the entire commit history using the default formatting. If the output takes up more than one screen, you can use Space to scroll and q to exit.`
-
-<pre><code class="hljs bash">git <span class="hljs-built_in">log</span> -n &lt;<span class="hljs-built_in">limit</span>&gt;</code></pre>
+**git log -n <limit>**
 
 `Limit the number of commits by <limit>. For example, git log -n 3 will display only 3 commits.`
+
+**git log --oneline**
+
+`Condense each commit to a single line. This is useful for getting a high-level overview of the project history.`
+
+**git log --stat**
+Along with the ordinary git log information, include which files were altered and the relative number of lines that were added or deleted from each of them.
