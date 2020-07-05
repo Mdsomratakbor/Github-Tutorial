@@ -8,9 +8,10 @@
 `Log output can be customized in several ways, from simply filtering commits to displaying them in a completely user-defined format. Some of the most common configurations of git log are presented below.`
 
 ### Usage
-<pre><code class="hljs 1c">git <span class="hljs-built_in">log</span></code></pre>
+**git log**
 
 `Display the entire commit history using the default formatting. If the output takes up more than one screen, you can use Space to scroll and q to exit.`
+
 **git log -n "limit"**
 
 `Limit the number of commits by <limit>. For example, git log -n 3 will display only 3 commits.`
