@@ -17,3 +17,6 @@
 
 ### -a
 `Includes all currently changed files in this commit. Keep in mind, however, that untracked (new) files are not included.`
+
+### --amend
+`Rewrites the very last commit with any currently staged changes and/or a new commit message. Git will rewrite the last commit and effectively replace it with the amended one. Note that such a rewriting of commits should only be performed on commits that have not been pushed to a remote repository, yet.`
