@@ -14,3 +14,7 @@
 `The git add, along with git commit are used to record project versions into the history of the repository. They are must-know for every Git user, as they compose the basis of Git workflow.`
 
 `While developing a project, you first edit the files in the working directory, then when a copy of the current state is ready to save, you need to stage changes, which is done with the git add command. The git add command should be called every time altering a file.`
+### Common options
+
+**Staging changes in <file> for the next commit:**
+<pre content="code snippet"><code class="hljs makefile">git <span class="hljs-keyword">add</span><span class="bash"> &lt;file&gt;</span></code></pre>
