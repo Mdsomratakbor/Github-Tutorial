@@ -14,3 +14,6 @@
 
 ### -m "message"
 `Sets the commit's message. Make sure to provide a concise description that helps your teammates (and yourself) understand what happened.`
+
+### -a
+`Includes all currently changed files in this commit. Keep in mind, however, that untracked (new) files are not included.`
