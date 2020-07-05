@@ -11,7 +11,7 @@
 <pre><code class="hljs 1c">git <span class="hljs-built_in">log</span></code></pre>
 
 `Display the entire commit history using the default formatting. If the output takes up more than one screen, you can use Space to scroll and q to exit.`
-**git log -n <limit>**
+**git log -n "limit"**
 
 `Limit the number of commits by <limit>. For example, git log -n 3 will display only 3 commits.`
 
