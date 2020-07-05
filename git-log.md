@@ -20,4 +20,5 @@
 `Condense each commit to a single line. This is useful for getting a high-level overview of the project history.`
 
 **git log --stat**
-Along with the ordinary git log information, include which files were altered and the relative number of lines that were added or deleted from each of them.
+
+`Along with the ordinary git log information, include which files were altered and the relative number of lines that were added or deleted from each of them.`
