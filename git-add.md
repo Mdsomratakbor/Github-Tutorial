@@ -18,3 +18,6 @@
 
 **Staging changes in <file> for the next commit:**
 <pre content="code snippet"><code class="hljs makefile">git <span class="hljs-keyword">add</span><span class="bash"> &lt;file&gt;</span></code></pre>
+
+**Staging all changes in <directory> for the next commit**
+<pre content="code snippet"><code class="hljs makefile">git <span class="hljs-keyword">add</span><span class="bash"> -p</span></code></pre>
