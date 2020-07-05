@@ -16,8 +16,8 @@
 `While developing a project, you first edit the files in the working directory, then when a copy of the current state is ready to save, you need to stage changes, which is done with the git add command. The git add command should be called every time altering a file.`
 ### Common options
 
-**Staging changes in <file> for the next commit:**
+**Staging changes in "file" for the next commit:**
 <pre content="code snippet"><code class="hljs makefile">git <span class="hljs-keyword">add</span><span class="bash"> &lt;file&gt;</span></code></pre>
 
-**Staging all changes in <directory> for the next commit**
+**Staging all changes in "directory" for the next commit**
 <pre content="code snippet"><code class="hljs makefile">git <span class="hljs-keyword">add</span><span class="bash"> -p</span></code></pre>
