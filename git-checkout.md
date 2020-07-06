@@ -53,3 +53,7 @@ b5c1b5c70 <span class="hljs-keyword">Merge</span> pull request #<span class="hlj
 a1e8fb5 Make some important changes <span class="hljs-keyword">to</span> hello.txt
 <span class="hljs-number">435</span>b61d Create hello.txt
 <span class="hljs-number">9773</span>e52 Initial <span class="hljs-keyword">import</span></code></pre>
+
+`You can use git checkout to view the “Make some import changes to hello.txt” commit as follows`
+
+**git checkout a1e8fb5**
