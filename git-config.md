@@ -8,3 +8,6 @@
 **git config user.email**
 
 `In this example, email is a child property of the user configuration block. This will return the configured email address, if any, that Git will associate with locally created commits.`
+
+### git config levels and files
+`Before we further discuss git config usage, let's take a moment to cover configuration levels. The git config command can accept arguments to specify which configuration level to operate on. The following configuration levels are available:`
