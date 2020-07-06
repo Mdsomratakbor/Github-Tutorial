@@ -7,3 +7,6 @@
 - `4. Initialize the local directory as a Git repository.`
 
    **Using this command : git init**
+- `5. Add the files in your new local repository. This stages them for the first commit.`
+
+   **Using this command : git add .**
