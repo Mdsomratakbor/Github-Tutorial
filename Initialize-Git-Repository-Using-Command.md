@@ -10,3 +10,18 @@
 - `5. Add the files in your new local repository. This stages them for the first commit.`
 
    **Using this command : git add .**
+   
+- `6. Commit the files that you’ve staged in your local repository.`
+
+   **Using this command : git commit -m "initial commit"**
+   
+- `7. Copy the https url of your newly created repository.`
+- `8. In the Command prompt, add the URL for the remote repository where your local repository will be pushed.`
+  
+  **Using this command : git remote add origin "remote repository URL"**
+  **Using this command : git remote -v**
+  
+- `9. Push the changes in your local repository to GitHub.`
+
+ **Using this command : git push -f origin master**
+
