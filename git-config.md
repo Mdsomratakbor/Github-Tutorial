@@ -6,3 +6,5 @@
 `The most basic use case for git config is to invoke it with a configuration name, which will display the set value at that name. Configuration names are dot delimited strings composed of a 'section' and a 'key' based on their hierarchy. For example: user.email`
 
 **git config user.email**
+
+`In this example, email is a child property of the user configuration block. This will return the configured email address, if any, that Git will associate with locally created commits.`
