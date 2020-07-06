@@ -30,3 +30,8 @@ b5c1b5c70 <span class="hljs-keyword">Merge</span> pull request #<span class="hlj
 <span class="hljs-number">6</span>d9c22a3b <span class="hljs-keyword">Update</span> uniforms <span class="hljs-keyword">only</span> <span class="hljs-keyword">when</span> onWindowResize
 <span class="hljs-number">881</span>b25b58 <span class="hljs-keyword">Update</span> ProjectionMatrix <span class="hljs-keyword">on</span> <span class="hljs-keyword">change</span> aspect
 </code></pre>
+
+
+`Each commit has a unique SHA-1 identifying hash. These IDs are used to travel through the committed timeline and revisit commits. By default, git log will only show commits for the currently selected branch. It is entirely possible that the commit you're looking for is on another branch. You can view all commits across all branches by executing git log --branches=*. The command git branch is used to view and visit other branches. Invoking the command, git branch -a will return a list of all known branch names. One of these branch names can then be logged using git log <branch_name>.`
+
+`When you have found a commit reference to the point in history you want to visit, you can utilize the git checkout command to visit that commit. Git checkout is an easy way to “load” any of these saved snapshots onto your development machine. During the normal course of development, the HEAD usually points to master or some other local branch, but when you check out a previous commit, HEAD no longer points to a branch—it points directly to a commit. This is called a “detached HEAD” state, and it can be visualized as the following:`
