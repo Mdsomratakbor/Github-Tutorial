@@ -5,4 +5,5 @@
 - `2. Open Git Bash.`
 - `3. Change the current working directory to your local project.`
 - `4. Initialize the local directory as a Git repository.`
-   **Using this command : git init **
+
+   **Using this command : git init**
