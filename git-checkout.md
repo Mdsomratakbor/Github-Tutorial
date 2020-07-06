@@ -57,3 +57,9 @@ a1e8fb5 Make some important changes <span class="hljs-keyword">to</span> hello.t
 `You can use git checkout to view the “Make some import changes to hello.txt” commit as follows`
 
 **git checkout a1e8fb5**
+
+`This makes your working directory match the exact state of the a1e8fb5 commit. You can look at files, compile the project, run tests, and even edit files without worrying about losing the current state of the project. Nothing you do in here will be saved in your repository. To continue developing, you need to get back to the “current” state of your project:`
+
+**git checkout master**
+
+`This assumes that you're developing on the default master branch. Once you’re back in the master branch, you can use either git revert or git reset to undo any undesired changes.`
