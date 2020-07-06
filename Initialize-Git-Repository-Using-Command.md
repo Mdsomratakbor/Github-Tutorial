@@ -23,5 +23,5 @@
   
 - `9. Push the changes in your local repository to GitHub.`
 
- **Using this command : git push -f origin master**
+  **Using this command : git push -f origin master**
 
