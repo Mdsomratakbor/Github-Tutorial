@@ -45,3 +45,11 @@ b5c1b5c70 <span class="hljs-keyword">Merge</span> pull request #<span class="hlj
 `This example assumes that you’ve started developing a crazy experiment, but you’re not sure if you want to keep it or not. To help you decide, you want to take a look at the state of the project before you started your experiment. First, you’ll need to find the ID of the revision you want to see.`
 
 **git log --oneline**
+
+`Let’s say your project history looks something like the following:`
+
+<pre><code class="hljs monkey">b7119f2 <span class="hljs-keyword">Continue</span> doing crazy things
+<span class="hljs-number">872</span>fa7e <span class="hljs-keyword">Try</span> something crazy
+a1e8fb5 Make some important changes <span class="hljs-keyword">to</span> hello.txt
+<span class="hljs-number">435</span>b61d Create hello.txt
+<span class="hljs-number">9773</span>e52 Initial <span class="hljs-keyword">import</span></code></pre>
