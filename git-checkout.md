@@ -63,3 +63,13 @@ a1e8fb5 Make some important changes <span class="hljs-keyword">to</span> hello.t
 **git checkout master**
 
 `This assumes that you're developing on the default master branch. Once you’re back in the master branch, you can use either git revert or git reset to undo any undesired changes.`
+
+### Summary
+
+`We covered many high-level strategies for undoing things in Git. It's important to remember that there is more than one way to 'undo' in a Git project. Most of the discussion on this page touched on deeper topics that are more thoroughly explained on pages specific to the relevant Git commands. The most commonly used 'undo' tools are git checkout, git revert, and git reset. Some key points to remember are:`
+
+- Once changes have been committed they are generally permanent
+- Use git checkout to move around and review the commit history
+- git revert is the best tool for undoing shared public changes
+- git reset is best used for undoing local private changes
+`In addition to the primary undo commands, we took a look at other Git utilities: git log for finding lost commits git clean for undoing uncommitted changes git add for modifying the staging index.`
