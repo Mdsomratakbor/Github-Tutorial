@@ -39,3 +39,7 @@ b5c1b5c70 <span class="hljs-keyword">Merge</span> pull request #<span class="hlj
 <img src="https://wac-cdn.atlassian.com/dam/jcr:362f3b15-9e74-4fe5-b97d-784e296880ad/01.svg?cdnVersion=1109" alt="Git Tutorial: Checking out a previous commit" class="lozad">
 
 `Checking out an old file does not move the HEAD pointer. It remains on the same branch and same commit, avoiding a 'detached head' state. You can then commit the old version of the file in a new snapshot as you would any other changes. So, in effect, this usage of git checkout on a file, serves as a way to revert back to an old version of an individual file. For more information on these two modes visit the git checkout page`
+
+### Viewing an old revision
+
+`This example assumes that you’ve started developing a crazy experiment, but you’re not sure if you want to keep it or not. To help you decide, you want to take a look at the state of the project before you started your experiment. First, you’ll need to find the ID of the revision you want to see.`
