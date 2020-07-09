@@ -15,8 +15,8 @@
 
 `Assuming the repo you're working in contains pre-existing branches, you can switch between these branches using git checkout. To find out what branches are available and what the current branch name is, execute git branch.`
 
-**$> git branch
-master
-another_branch
-feature_inprogress_branch
+**$> git branch </br>
+master </br>
+another_branch </br>
+feature_inprogress_branch </br>
 $> git checkout feature_inprogress_branch**
