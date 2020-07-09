@@ -59,3 +59,6 @@ $> git checkout feature_inprogress_branch**
 **git checkout -b "branchname"**
 
 **git reset --hard origin/"branchname"**
+
+### Summary
+`This page focused on usage of the git checkout command when changing branches. In summation, git checkout, when used on branches, alters the target of the HEAD ref. It can be used to create branches, switch branches, and checkout remote branches. The git checkout command is an essential tool for standard Git operation. It is a counterpart to git merge. The git checkout and git merge commands are critical tools to enabling git workflows.`
