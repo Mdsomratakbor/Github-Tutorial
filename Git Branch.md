@@ -20,3 +20,7 @@
 **git branch**
 
 `List all of the branches in your repository. This is synonymous with git branch --list`
+
+**git branch <branch>**
+  
+`Create a new branch called <branch>. This does not check out the new branch.`
