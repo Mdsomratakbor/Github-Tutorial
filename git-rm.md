@@ -42,3 +42,7 @@
 **-quiet**
 
 `The quiet option hides the output of the git rm command. The command normally outputs one line for each file removed.`
+
+### The scope of git rm
+
+`The git rm command operates on the current branch only. The removal event is only applied to the working directory and staging index trees. The file removal is not persisted to the repository history until a new commit is created.`
