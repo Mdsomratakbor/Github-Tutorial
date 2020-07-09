@@ -50,3 +50,15 @@
 ### Why use git rm instead of rm
 
 `A Git repository will recognize when a regular shell rm command has been executed on a file it is tracking. It will update the working directory to reflect the removal. It will not update the staging index with the removal. An additional git add command will have to be executed on the removed file paths to add the changes to the staging index. The git rm command acts a shortcut in that it will update the working directory and the staging index with the removal.`
+
+### How to remove files no longer in the filesystem
+
+`As stated above in "Why use git rm instead of rm" , git rm is actually a convenience command that combines the standard shell rm and git add to remove a file from the working directory and promote that removal to the staging index. A repository can get into a cumbersome state in the event that several files have been removed using only the standard shell rm command.`
+
+`If intentions are to record all the explicitly removed files as part of the next commit, git commit -a will add all the removal events to the staging index in preparation of the next commit.`
+
+`If however, intentions are to persistently remove the files that were removed with the shell rm, use the following command:`
+
+**git diff --name-only --diff-filter=D -z | xargs -0 git rm --cached**
+
+`This command will generate a list of the removed files from the working directory and pipe that list to git rm --cached which will update the staging index.`
