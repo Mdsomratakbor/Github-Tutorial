@@ -43,3 +43,5 @@
 `List all remote branches.`
 
 ### Creating Branches
+
+`It's important to understand that branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer, it doesn’t change the repository in any other way. If you start with a repository that looks like this:`
