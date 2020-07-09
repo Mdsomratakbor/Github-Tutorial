@@ -69,3 +69,4 @@
 
 **`# pushes the crazy-experiment branch to new-remote-repo**
 
+`This command will push a copy of the local branch crazy-experiment to the remote repo <remote>`
