@@ -22,3 +22,14 @@ feature_inprogress_branch </br>
 $> git checkout feature_inprogress_branch**
 
 `The above example demonstrates how to view a list of available branches by executing the git branch command, and switch to a specified branch, in this case, the feature_inprogress_branch.`
+
+# New Branches
+`Git checkout works hand-in-hand with git branch. The git branch command can be used to create a new branch. When you want to start a new feature, you create a new branch off master using git branch new_branch. Once created you can then use git checkout new_branch to switch to that branch. Additionally, The git checkout command accepts a -b argument that acts as a convenience method which will create the new branch and immediately switch to it. You can work on multiple features in a single repository by switching between them with git checkout.`
+
+**git checkout -b "branch-Name"**
+  
+`The above example simultaneously creates and checks out <new-branch>. The -b option is a convenience flag that tells Git to run git branch <new-branch> before running git checkout <new-branch>.`
+
+**git checkout -b "new-branch" "existing-branch"**
+  
+`By default git checkout -b will base the new-branch off the current HEAD. An optional additional branch parameter can be passed to git checkout. In the above example, <existing-branch> is passed which then bases new-branch off of existing-branch instead of the current HEAD.`
