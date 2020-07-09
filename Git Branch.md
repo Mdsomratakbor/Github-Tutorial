@@ -32,3 +32,7 @@
 **git branch -D <branch>**
   
 `Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently throw away all of the commits associated with a particular line of development.`
+
+**git branch -m <branch>**
+  
+`Rename the current branch to <branch>.`
