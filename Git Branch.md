@@ -80,3 +80,26 @@
  `However, if the branch hasn’t been merged, the above command will output an error message:`
  **`error: The branch 'crazy-experiment' is not fully merged.`**
  **`If you are sure you want to delete it, run 'git branch -D crazy-experiment'.`**
+ 
+ `This protects you from losing access to that entire line of development. If you really want to delete the branch (e.g., it’s a failed experiment), you can use the capital -D flag:`
+ 
+ **git branch -D crazy-experiment**
+ 
+ `This deletes the branch regardless of its status and without warnings, so use it judiciously.`
+
+`The previous commands will delete a local copy of a branch. The branch may still exist in remote repos. To delete a remote branch execute the following.`
+
+**git push origin --delete crazy-experiment**
+
+Or
+
+**git push origin :crazy-experiment**
+
+`This will push a delete signal to the remote origin repository that triggers a delete of the remote crazy-experiment branch.`
+
+### Summary
+
+`In this document we discussed Git's branching behavior and the git branch command. The git branch commands primary functions are to create, list, rename and delete branches. To operate further on the resulting branches the command is commonly used with other commands like git checkout. Learn more about git checkout branch operations; such as switching branches and merging branches, on the git checkout page.`
+
+`Compared to other VCSs, Git's branch operations are inexpensive and frequently used. This flexibility enables powerful Git workflow customization. For more info on Git workflows visit our extended workflow discussion pages: The
+Feature Branch Workflow, GitFlow Workflow, and Forking Workflow.`
