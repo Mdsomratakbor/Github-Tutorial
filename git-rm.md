@@ -29,3 +29,7 @@
 **--**
 
 `The separator option is used to explicitly distinguish between a list of file names and the arguments being passed to git rm. This is useful if some of the file names have syntax that might be mistaken for other options.`
+
+**--cached**
+
+`The cached option specifies that the removal should happen only on the staging index. Working directory files will be left alone.`
