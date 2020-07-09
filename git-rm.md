@@ -21,3 +21,9 @@
 **--dry-run**
 
 `The "dry run" option is a safeguard that will execute the git rm command but not actually delete the files. Instead it will output which files it would have removed.`
+
+**-r**
+
+`The -r option is shorthand for 'recursive'. When operating in recursive mode git rm will remove a target directory and all the contents of that directory.`
+
+**--**
