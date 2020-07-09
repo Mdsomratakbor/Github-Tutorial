@@ -33,3 +33,29 @@ $> git checkout feature_inprogress_branch**
 **git checkout -b "new-branch" "existing-branch"**
   
 `By default git checkout -b will base the new-branch off the current HEAD. An optional additional branch parameter can be passed to git checkout. In the above example, <existing-branch> is passed which then bases new-branch off of existing-branch instead of the current HEAD.`
+
+### Switching Branches
+`Switching branches is a straightforward operation. Executing the following will point HEAD to the tip of <branchname>.`
+
+**git checkout "branchname"**
+
+`Git tracks a history of checkout operations in the reflog. You can execute git reflog to view the history.`
+
+### Git Checkout a Remote Branch
+`When collaborating with a team it is common to utilize remote repositories. These repositories may be hosted and shared or they may be another colleague's local copy. Each remote repository will contain its own set of branches. In order to checkout a remote branch you have to first fetch the contents of the branch.`
+
+**`git fetch --all`**
+
+`In modern versions of Git, you can then checkout the remote branch like a local branch.`
+
+**`git checkout <remotebranch>`**
+  
+`Older versions of Git require the creation of a new branch based on the remote.`
+
+**`git checkout <remotebranch> origin/<remotebranch>`**
+  
+`Additionally you can checkout a new local branch and reset it to the remote branches last commit.`
+
+**git checkout -b "branchname"**
+
+**git reset --hard origin/"branchname"**
