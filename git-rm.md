@@ -33,3 +33,12 @@
 **--cached**
 
 `The cached option specifies that the removal should happen only on the staging index. Working directory files will be left alone.`
+
+**--ignore-unmatch**
+
+`This causes the command to exit with a 0 sigterm status even if no files matched. This is a Unix level status code. The code 0 indicates a successful invocation of the command. The --ignore-unmatch option can be helpful when using git rm as part of a greater shell script that needs to fail gracefully.`
+
+**-q**
+**-quiet**
+
+`The quiet option hides the output of the git rm command. The command normally outputs one line for each file removed.`
