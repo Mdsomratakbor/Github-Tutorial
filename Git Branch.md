@@ -55,3 +55,8 @@
 `The repository history remains unchanged. All you get is a new pointer to the current commit:`
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:b0e2f237-9337-4385-be22-43f623e133d0/03.svg?cdnVersion=1116" />
+
+`Note that this only creates the new branch. To start adding commits to it, you need to select it with git checkout, and then use the standard git add and git commit commands. `
+
+### Creating remote branches
+`So far these examples have all demonstrated local branch operations. The git branch command also works on remote branches. In order to operate on remote branches, a remote repo must first be configured and added to the local repo config.`
