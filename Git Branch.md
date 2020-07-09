@@ -70,3 +70,13 @@
 **`# pushes the crazy-experiment branch to new-remote-repo**
 
 `This command will push a copy of the local branch crazy-experiment to the remote repo <remote>`
+  
+  ### Deleting Branches
+  
+ `Once you’ve finished working on a branch and have merged it into the main code base, you’re free to delete the branch without losing any history:`
+ 
+ **git branch -d crazy-experiment**
+ 
+ `However, if the branch hasn’t been merged, the above command will output an error message:`
+ **`error: The branch 'crazy-experiment' is not fully merged.`**
+ **`If you are sure you want to delete it, run 'git branch -D crazy-experiment'.`**
