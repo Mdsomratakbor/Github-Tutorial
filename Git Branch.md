@@ -45,3 +45,5 @@
 ### Creating Branches
 
 `It's important to understand that branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer, it doesn’t change the repository in any other way. If you start with a repository that looks like this:`
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr:80aa77d2-c28f-415e-ab10-e3612456a9c1/02.svg?cdnVersion=1116" />
