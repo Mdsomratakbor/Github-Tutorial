@@ -9,3 +9,5 @@
 ### Usage
 
 **"file"…​**
+
+`Specifies the target files to remove. The option value can be an individual file, a space delimited list of files file1 file2 file3, or a wildcard file glob (~./directory/*).`
