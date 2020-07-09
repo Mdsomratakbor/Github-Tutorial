@@ -20,3 +20,5 @@ master </br>
 another_branch </br>
 feature_inprogress_branch </br>
 $> git checkout feature_inprogress_branch**
+
+`The above example demonstrates how to view a list of available branches by executing the git branch command, and switch to a specified branch, in this case, the feature_inprogress_branch.`
