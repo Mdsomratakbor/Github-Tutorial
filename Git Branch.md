@@ -60,3 +60,8 @@
 
 ### Creating remote branches
 `So far these examples have all demonstrated local branch operations. The git branch command also works on remote branches. In order to operate on remote branches, a remote repo must first be configured and added to the local repo config.`
+
+**`$ git remote add new-remote-repo https://bitbucket.com/user/repo.git`**
+**`# Add remote repo to local repo config`**
+**`$ git push <new-remote-repo> crazy-experiment~`**
+**`# pushes the crazy-experiment branch to new-remote-repo**
