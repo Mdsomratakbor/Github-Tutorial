@@ -11,3 +11,13 @@
 **"file"…​**
 
 `Specifies the target files to remove. The option value can be an individual file, a space delimited list of files file1 file2 file3, or a wildcard file glob (~./directory/*).`
+
+**-f**
+**--force**
+
+`The -foption is used to override the safety check that Git makes to ensure that the files in HEAD match the current content in the staging index and working directory.`
+
+**-n**
+**--dry-run**
+
+`The "dry run" option is a safeguard that will execute the git rm command but not actually delete the files. Instead it will output which files it would have removed.`
