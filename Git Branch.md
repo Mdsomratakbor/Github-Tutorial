@@ -24,3 +24,7 @@
 **git branch <branch>**
   
 `Create a new branch called <branch>. This does not check out the new branch.`
+
+**git branch -d <branch>**
+  
+`Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has unmerged changes.`
