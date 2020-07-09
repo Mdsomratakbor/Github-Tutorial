@@ -47,3 +47,11 @@
 `It's important to understand that branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer, it doesn’t change the repository in any other way. If you start with a repository that looks like this:`
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:80aa77d2-c28f-415e-ab10-e3612456a9c1/02.svg?cdnVersion=1116" />
+
+`Then, you create a branch using the following command:`
+
+**git branch crazy-experiment**
+
+`The repository history remains unchanged. All you get is a new pointer to the current commit:`
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr:b0e2f237-9337-4385-be22-43f623e133d0/03.svg?cdnVersion=1116" />
