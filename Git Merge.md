@@ -82,25 +82,28 @@
 
 `The next example is very similar, but requires a 3-way merge because master progresses while the feature is in-progress. This is a common scenario for large features or when several developers are working on a project simultaneously.`
 
--`Start a new feature`
--`git checkout -b new-feature master`
--`# Edit some files`
--`git add <file>`
--`git commit -m "Start a feature"`
--`# Edit some files`
--`git add <file>`
--`git commit -m "Finish a feature"`
--`# Develop the master branch`
--`git checkout master`
--`# Edit some files`
--`git add <file>`
--`git commit -m "Make some super-stable changes to master"`
--`# Merge in the new-feature branch
--`git merge new-feature`
--`git branch -d new-feature`
+- `Start a new feature`
+- `git checkout -b new-feature master`
+- `# Edit some files`
+- `git add <file>`
+- `git commit -m "Start a feature"`
+- `# Edit some files`
+- `git add <file>`
+- `git commit -m "Finish a feature"`
+- `# Develop the master branch`
+- `git checkout master`
+- `# Edit some files`
+- `git add <file>`
+- `git commit -m "Make some super-stable changes to master"`
+- `# Merge in the new-feature branch
+- `git merge new-feature`
+- `git branch -d new-feature`
 
 `Note that it’s impossible for Git to perform a fast-forward merge, as there is no way to move master up to new-feature without backtracking.`
 
 `For most workflows, new-feature would be a much larger feature that took a long time to develop, which would be why new commits would appear on master in the meantime. If your feature branch was actually as small as the one in the above example, you would probably be better off rebasing it onto master and doing a fast-forward merge. This prevents superfluous merge commits from cluttering up the project history.`
 
+### Resolving conflict
+`If the two branches you're trying to merge both changed the same part of the same file, Git won't be able to figure out which version to use. When such a situation occurs, it stops right before the merge commit so that you can resolve the conflicts manually.`
 
+`The great part of Git's merging process is that it uses the familiar edit/stage/commit workflow to resolve merge conflicts. When you encounter a merge conflict, running the git status command shows you which files need to be resolved. For example, if both branches modified the same section of hello.py, you would see something like the following:`
