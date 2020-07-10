@@ -21,3 +21,7 @@
 ### Preparing to merge
 
 `Before performing a merge there are a couple of preparation steps to take to ensure the merge goes smoothly.`
+
+### Confirm the receiving branch
+
+`Execute git status to ensure that HEAD is pointing to the correct merge-receiving branch. If needed, execute git checkout <receiving> to switch to the receiving branch. In our case we will execute git checkout master.`
