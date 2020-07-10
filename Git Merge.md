@@ -129,3 +129,12 @@ this <span class="hljs-keyword">is</span> conflicted <span class="hljs-built_in"
 `Once you've identified conflicting sections, you can go in and fix up the merge to your liking. When you're ready to finish the merge, all you have to do is run git add on the conflicted file(s) to tell Git they're resolved. Then, you run a normal git commit to generate the merge commit. It’s the exact same process as committing an ordinary snapshot, which means it’s easy for normal developers to manage their own merges.`
 
 `Note that merge conflicts will only occur in the event of a 3-way merge. It’s not possible to have conflicting changes in a fast-forward merge. `
+
+### Summary
+`This document is an overview of the git merge command. Merging is an essential process when working with Git. We discussed the internal mechanics behind a merge and the differences between a fast forward merge and a three way, true merge. Some key take-aways are:`
+ 
+
+- `Git merging combines sequences of commits into one unified history of commits.`
+- `There are two main ways Git will merge: Fast Forward and Three way.`
+- `Git can automatically merge commits unless there are changes that conflict in both commit sequences.`
+- `This document integrated and referenced other Git commands like: git branch, git pull, and git fetch. Visit their corresponding stand-alone pages for more information. `
