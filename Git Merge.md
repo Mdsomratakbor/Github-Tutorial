@@ -67,3 +67,9 @@
 **`git merge new-feature`**
 
 **`git branch -d new-feature**
+
+`This is a common workflow for short-lived topic branches that are used more as an isolated development than an organizational tool for longer-running features.`
+
+`Also note that Git should not complain about the git branch -d, since new-feature is now accessible from the master branch.`
+
+`In the event that you require a merge commit during a fast forward merge for record keeping purposes you can execute git merge with the --no-ffoption.`
