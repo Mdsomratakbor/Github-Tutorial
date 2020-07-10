@@ -73,3 +73,7 @@
 `Also note that Git should not complain about the git branch -d, since new-feature is now accessible from the master branch.`
 
 `In the event that you require a merge commit during a fast forward merge for record keeping purposes you can execute git merge with the --no-ffoption.`
+
+**git merge --no-ff <branch>**
+
+`This command merges the specified branch into the current branch, but always generates a merge commit (even if it was a fast-forward merge). This is useful for documenting all merges that occur in your repository.`
