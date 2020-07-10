@@ -74,6 +74,27 @@
 
 `In the event that you require a merge commit during a fast forward merge for record keeping purposes you can execute git merge with the --no-ffoption.`
 
-**git merge --no-ff <branch>**
+**git merge --no-ff "branch"**
 
 `This command merges the specified branch into the current branch, but always generates a merge commit (even if it was a fast-forward merge). This is useful for documenting all merges that occur in your repository.`
+
+### 3-way merge
+
+`The next example is very similar, but requires a 3-way merge because master progresses while the feature is in-progress. This is a common scenario for large features or when several developers are working on a project simultaneously.`
+
+Start a new feature
+git checkout -b new-feature master
+# Edit some files
+git add <file>
+git commit -m "Start a feature"
+# Edit some files
+git add <file>
+git commit -m "Finish a feature"
+# Develop the master branch
+git checkout master
+# Edit some files
+git add <file>
+git commit -m "Make some super-stable changes to master"
+# Merge in the new-feature branch
+git merge new-feature
+git branch -d new-feature
