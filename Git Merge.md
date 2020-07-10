@@ -66,7 +66,7 @@
 
 **`git merge new-feature`**
 
-**`git branch -d new-feature**
+**`git branch -d new-feature`**
 
 `This is a common workflow for short-lived topic branches that are used more as an isolated development than an organizational tool for longer-running features.`
 
@@ -82,19 +82,25 @@
 
 `The next example is very similar, but requires a 3-way merge because master progresses while the feature is in-progress. This is a common scenario for large features or when several developers are working on a project simultaneously.`
 
-Start a new feature
-git checkout -b new-feature master
-# Edit some files
-git add <file>
-git commit -m "Start a feature"
-# Edit some files
-git add <file>
-git commit -m "Finish a feature"
-# Develop the master branch
-git checkout master
-# Edit some files
-git add <file>
-git commit -m "Make some super-stable changes to master"
-# Merge in the new-feature branch
-git merge new-feature
-git branch -d new-feature
+-`Start a new feature`
+-`git checkout -b new-feature master`
+-`# Edit some files`
+-`git add <file>`
+-`git commit -m "Start a feature"`
+-`# Edit some files`
+-`git add <file>`
+-`git commit -m "Finish a feature"`
+-`# Develop the master branch`
+-`git checkout master`
+-`# Edit some files`
+-`git add <file>`
+-`git commit -m "Make some super-stable changes to master"`
+-`# Merge in the new-feature branch
+-`git merge new-feature`
+-`git branch -d new-feature`
+
+`Note that it’s impossible for Git to perform a fast-forward merge, as there is no way to move master up to new-feature without backtracking.`
+
+`For most workflows, new-feature would be a much larger feature that took a long time to develop, which would be why new commits would appear on master in the meantime. If your feature branch was actually as small as the one in the above example, you would probably be better off rebasing it onto master and doing a fast-forward merge. This prevents superfluous merge commits from cluttering up the project history.`
+
+
