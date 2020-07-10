@@ -40,3 +40,30 @@
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:b87df050-2a3a-4f17-bb80-43c5217b4947/07%20(1).svg?cdnVersion=1118" loading="lazy" alt="">
 
+`While you can use either of these merge strategies, many developers like to use fast-forward merges (facilitated through rebasing) for small features or bug fixes, while reserving 3-way merges for the integration of longer-running features. In the latter case, the resulting merge commit serves as a symbolic joining of the two branches.`
+
+`Our first example demonstrates a fast-forward merge. The code below creates a new branch, adds two commits to it, then integrates it into the main line with a fast-forward merge.`
+
+**`# Start a new feature`
+
+**`git checkout -b new-feature master`**
+
+**`# Edit some files`**
+
+**`git add <file>`**
+
+**`git commit -m "Start a feature"`**
+
+**`# Edit some files`**
+
+**`git add <file>`**
+
+**`git commit -m "Finish a feature"`**
+
+**`# Merge in the new-feature branch`**
+
+**`git checkout master`**
+
+**`git merge new-feature`**
+
+**`git branch -d new-feature**
