@@ -34,6 +34,8 @@ In the above diagram, we can see the new commit H. This commit is a new merge co
 
 `Gives verbose output during a pull which displays the content being downloaded and the merge details.`
 
-**Git pull discussion**
+### Git pull discussion
 
 You can think of git pull as Git's version of svn update. It’s an easy way to synchronize your local repository with upstream changes. The following diagram explains each step of the pulling process.
+
+<img src="https://wac-cdn.atlassian.com/dam/jcr:60943ee2-bec2-4433-8216-885c4bd3c2b9/03.svg?cdnVersion=1123"/>
