@@ -104,3 +104,15 @@
 - `>>>>>>> new_branch_to_merge_later`
 
 `Think of these new lines as "conflict dividers". The ======= line is the "center" of the conflict. All the content between the center and the <<<<<<< HEAD line is content that exists in the current branch master which the HEAD ref is pointing to. Alternatively all content between the center and >>>>>>> new_branch_to_merge_later is content that is present in our merging branch.`
+
+### How to resolve merge conflicts using the command line
+
+`The most direct way to resolve a merge conflict is to edit the conflicted file. Open the merge.txt file in your favorite editor. For our example lets simply remove all the conflict dividers. The modified merge.txt content should then look like:`
+
+**this is some content to mess with
+content to append
+totally different content to merge later**
+
+`Once the file has been edited use git add merge.txt to stage the new merged content. To finalize the merge create a new commit by executing:`
+
+**`git commit -m "merged and resolved the conflict in merge.txt"`**
