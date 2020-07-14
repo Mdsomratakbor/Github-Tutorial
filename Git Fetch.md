@@ -23,11 +23,11 @@ debug2**
 `Remote branches are just like local branches, except they map to commits from somebody else’s repository. Remote branches are prefixed by the remote they belong to so that you don’t mix them up with local branches. Like local branches, Git also has refs for remote branches. Remote branch refs live in the ./.git/refs/remotes/ directory. The next example code snippet shows the branches you might see after fetching a remote repo named conveniently named remote-repo:`\
 
 **git branch -r</br>
-# origin/master</br>
-# origin/feature1</br>
-# origin/debug2</br>
-# remote-repo/master</br>
-# remote-repo/other-feature**
+`# origin/master`</br>
+`# origin/feature1`</br>
+`# origin/debug2`</br>
+`# remote-repo/master`</br>
+`# remote-repo/other-feature`**
 
 `This output displays the local branches we had previously examined but now displays them prefixed with origin/. Additionally, we now see the remote branches prefixed with remote-repo. You can check out a remote branch just like a local one, but this puts you in a detached HEAD state (just like checking out an old commit). You can think of them as read-only branches. To view your remote branches, simply pass the -r flag to the git branch command.`
 
@@ -50,8 +50,8 @@ debug2**
 **git fetch --dry-run**
 
 `The --dry-run option will perform a demo run of the command. I will output examples of actions it will take during the fetch but not apply them.`
-
-
+### Git fetch examples
+### git fetch a remote branch
 
 
 ### Git fetch summary
