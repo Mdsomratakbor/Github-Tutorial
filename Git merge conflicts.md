@@ -86,3 +86,13 @@
 **`Unmerged paths:`**</br>
 **`(use "git add <file>..." to mark resolution)`**</br>
 **`both modified:   merge.txt`**</br>
+
+`The output from git status indicates that there are unmerged paths due to a conflict. The merge.text file now appears in a modified state. Let's examine the file and see whats modified.`
+
+**`$ cat merge.txt`**</br>
+**`<<<<<<< HEAD`**</br>
+**`this is some content to mess with`**</br>
+**`content to append`**</br>
+**`=======`**</br>
+**`totally different content to merge later`**</br>
+**`>>>>>>> new_branch_to_merge_later`**</br>
