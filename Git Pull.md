@@ -36,6 +36,8 @@ In the above diagram, we can see the new commit H. This commit is a new merge co
 
 ### Git pull discussion
 
-You can think of git pull as Git's version of svn update. It’s an easy way to synchronize your local repository with upstream changes. The following diagram explains each step of the pulling process.
+`You can think of git pull as Git's version of svn update. It’s an easy way to synchronize your local repository with upstream changes. The following diagram explains each step of the pulling process.`
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:60943ee2-bec2-4433-8216-885c4bd3c2b9/03.svg?cdnVersion=1123"/>
+
+`You start out thinking your repository is synchronized, but then git fetch reveals that origin's version of master has progressed since you last checked it. Then git merge immediately integrates the remote master into the local one.`
