@@ -73,7 +73,7 @@ debug2**
 **`state without impacting any branches by performing another checkout.`**</br>
 **`If you want to create a new branch to retain commits you create, you may`**</br>
 **`do so (now or later) by using -b with the checkout command again. Example:`**</br>
-**`git checkout -b <new-branch-name>`**</br>**
+**`git checkout -b <new-branch-name>`**</br>
 
 `The output from this checkout operation indicates that we are in a detached HEAD state. This is expected and means that our HEAD ref is pointing to a ref that is not in sequence with our local history. Being that HEAD is pointed at the coworkers/feature_branch ref, we can create a new local branch from that ref. The 'detached HEAD' output shows us how to do this using the git checkout command:`
 
