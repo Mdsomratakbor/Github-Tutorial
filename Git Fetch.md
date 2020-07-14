@@ -65,16 +65,21 @@ debug2**
 
 `We now locally have the contents of coworkers/feature_branch we will need the integrate this into our local working copy. We begin this process by using the git checkout command to checkout the newly downloaded remote branch.`
 
-**`git checkout coworkers/feature_branch`</br>
-`Note: checking out coworkers/feature_branch'.`</br>
+**`git checkout coworkers/feature_branch`**</br>
+**`Note: checking out coworkers/feature_branch'.`**</br>
 
-`You are in 'detached HEAD' state. You can look around, make experimental`</br>
-`changes and commit them, and you can discard any commits you make in this`</br>
-`state without impacting any branches by performing another checkout.`</br>
-`If you want to create a new branch to retain commits you create, you may`</br>
-`do so (now or later) by using -b with the checkout command again. Example:`</br>
-`git checkout -b <new-branch-name>`</br>**
+**`You are in 'detached HEAD' state. You can look around, make experimental`**</br>
+**`changes and commit them, and you can discard any commits you make in this`**</br>
+**`state without impacting any branches by performing another checkout.`**</br>
+**`If you want to create a new branch to retain commits you create, you may`**</br>
+**`do so (now or later) by using -b with the checkout command again. Example:`**</br>
+**`git checkout -b <new-branch-name>`**</br>**
 
+`The output from this checkout operation indicates that we are in a detached HEAD state. This is expected and means that our HEAD ref is pointing to a ref that is not in sequence with our local history. Being that HEAD is pointed at the coworkers/feature_branch ref, we can create a new local branch from that ref. The 'detached HEAD' output shows us how to do this using the git checkout command:`
+
+**git checkout -b local_feature_branch**
+
+`Here we have created a new local branch named local_feature_branch this puts updates HEAD to point at the latest remote content and we can continue development on it from this point.`
 
 ### Git fetch summary
 
