@@ -28,3 +28,32 @@ debug2**
 # origin/debug2</br>
 # remote-repo/master</br>
 # remote-repo/other-feature**
+
+`This output displays the local branches we had previously examined but now displays them prefixed with origin/. Additionally, we now see the remote branches prefixed with remote-repo. You can check out a remote branch just like a local one, but this puts you in a detached HEAD state (just like checking out an old commit). You can think of them as read-only branches. To view your remote branches, simply pass the -r flag to the git branch command.`
+
+`You can inspect remote branches with the usual git checkout and git log commands. If you approve the changes a remote branch contains, you can merge it into a local branch with a normal git merge. So, unlike SVN, synchronizing your local repository with a remote repository is actually a two-step process: fetch, then merge. The git pull command is a convenient shortcut for this process.`
+
+### Git fetch commands and options
+
+**git fetch "remote"**
+
+`Fetch all of the branches from the repository. This also downloads all of the required commits and files from the other repository.`
+
+**git fetch "remote" "branch"**
+
+`Same as the above command, but only fetch the specified branch.`
+
+**git fetch --all**
+
+`A power move which fetches all registered remotes and their branches:`
+
+**git fetch --dry-run**
+
+`The --dry-run option will perform a demo run of the command. I will output examples of actions it will take during the fetch but not apply them.`
+
+
+
+
+### Git fetch summary
+
+`In review, git fetch is a primary command used to download contents from a remote repository. git fetch is used in conjunction with git remote, git branch, git checkout, and git reset to update a local repository to the state of a remote. The git fetch command is a critical piece of collaborative git work flows. git fetch has similar behavior to git pull however git fetch can be considered a safer, nondestructive version.`
