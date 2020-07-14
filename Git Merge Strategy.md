@@ -76,3 +76,25 @@
 **`ignore-all-space`**</br>
 **`ignore-space-at-eol`**</br>
 **`ignore-cr-at-eol`**</br>
+
+`A set of options that target whitespace characters. Any line that matches the subset of the passed option will be ignored.`
+
+**renormalize**
+
+`This option runs a check-out and check-in on all of the tree git trees while resolving a three-way merge. This option is intended to be used with merging branches with differing checkin/checkout states.`
+
+**no-normalize**
+
+`Disables the renormalize option. This overrides the merge.renormalize configuration variable.`
+
+**no-renames**
+
+`This option will ignore renamed files during the merge.`
+
+**find-renames=n**
+
+`This is the default behavior. The recursive merge will honor file renames. The n parameter can be used to pass a threshold for rename similarity. The default n value is 100%.`
+
+**subtree**
+
+`This option borrows from the `subtree` strategy. Where the strategy operates on two trees and modifies how to make them match on a shared ancestor, this option instead operates on the path metadata of the tree to make them match.`
