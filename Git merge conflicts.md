@@ -66,3 +66,23 @@
 **`git commit -am"appended content to merge.txt"`**</br>
 **`[master 24fbe3c] appended content to merge.tx`**</br>
 **`1 file changed, 1 insertion(+)`**</br>
+
+`This chain of commands checks out the master branch, appends content to merge.txt, and commits it. This now puts our example repo in a state where we have 2 new commits. One in the master branch and one in the new_branch_to_merge_later branch. At this time lets git merge new_branch_to_merge_later and see what happen!`
+
+**`$ git merge new_branch_to_merge_later`**</br>
+**`Auto-merging merge.txt`**</br>
+**`CONFLICT (content): Merge conflict in merge.txt`**</br>
+**`Automatic merge failed; fix conflicts and then commit the result.`**</br>
+
+### How to identify merge conflicts
+
+`As we have experienced from the proceeding example, Git will produce some descriptive output letting us know that a CONFLICT has occcured. We can gain further insight by running the git status command`
+
+**`$ git status`**</br>
+**`On branch master`**</br>
+**`You have unmerged paths.`**</br>
+**`(fix conflicts and run "git commit")`**</br>
+**`(use "git merge --abort" to abort the merge)`**</br>
+**`Unmerged paths:`**</br>
+**`(use "git add <file>..." to mark resolution)`**</br>
+**`both modified:   merge.txt`**</br>
