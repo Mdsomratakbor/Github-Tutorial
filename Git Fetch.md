@@ -52,6 +52,28 @@ debug2**
 `The --dry-run option will perform a demo run of the command. I will output examples of actions it will take during the fetch but not apply them.`
 ### Git fetch examples
 ### git fetch a remote branch
+`he following example will demonstrate how to fetch a remote branch and update your local working state to the remote contents. In this example, lets assume there is a central repo origin which the local repository has been cloned from using the git clone command. Let us also assume an additional remote repository named coworkers_repo that contains a feature_branch which we will configure and fetch. With these assumptions set let us continue the example.`
+
+`Firstly we will need to configure the remote repo using the git remote command.`
+
+**git remote add coworkers_repo git@bitbucket.org:coworker/coworkers_repo.git**
+
+`Here we have created a reference to the coworker's repo using the repo URL. We will now pass that remote name to git fetch to download the contents.`
+
+**`git fetch coworkers feature_branch`</br>
+`fetching coworkers/feature_branch`**
+
+`We now locally have the contents of coworkers/feature_branch we will need the integrate this into our local working copy. We begin this process by using the git checkout command to checkout the newly downloaded remote branch.`
+
+**`git checkout coworkers/feature_branch`</br>
+`Note: checking out coworkers/feature_branch'.`</br>
+
+`You are in 'detached HEAD' state. You can look around, make experimental`</br>
+`changes and commit them, and you can discard any commits you make in this`</br>
+`state without impacting any branches by performing another checkout.`</br>
+`If you want to create a new branch to retain commits you create, you may`</br>
+`do so (now or later) by using -b with the checkout command again. Example:`</br>
+`git checkout -b <new-branch-name>`</br>**
 
 
 ### Git fetch summary
