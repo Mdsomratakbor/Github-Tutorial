@@ -19,3 +19,12 @@ debug2**
 master</br>
 feature1</br>
 debug2**
+
+`Remote branches are just like local branches, except they map to commits from somebody else’s repository. Remote branches are prefixed by the remote they belong to so that you don’t mix them up with local branches. Like local branches, Git also has refs for remote branches. Remote branch refs live in the ./.git/refs/remotes/ directory. The next example code snippet shows the branches you might see after fetching a remote repo named conveniently named remote-repo:`\
+
+**git branch -r</br>
+# origin/master</br>
+# origin/feature1</br>
+# origin/debug2</br>
+# remote-repo/master</br>
+# remote-repo/other-feature**
