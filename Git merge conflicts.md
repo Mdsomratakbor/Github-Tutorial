@@ -96,3 +96,11 @@
 **`=======`**</br>
 **`totally different content to merge later`**</br>
 **`>>>>>>> new_branch_to_merge_later`**</br>
+
+`Here we have used the cat command to put out the contents of the merge.txt file. We can see some strange new additions`
+
+- `<<<<<<< HEAD`
+- `=======`
+- `>>>>>>> new_branch_to_merge_later`
+
+`Think of these new lines as "conflict dividers". The ======= line is the "center" of the conflict. All the content between the center and the <<<<<<< HEAD line is content that exists in the current branch master which the HEAD ref is pointing to. Alternatively all content between the center and >>>>>>> new_branch_to_merge_later is content that is present in our merging branch.`
