@@ -59,3 +59,10 @@
 - overwrite the content in merge.txt  
 - commit the new content
 `With this new branch: new_branch_to_merge_later we have created a commit that overrides the content of merge.txt`
+
+**`git checkout master`**</br>
+**`Switched to branch 'master'`**</br>
+**`echo "content to append" >> merge.txt`**</br>
+**`git commit -am"appended content to merge.txt"`**</br>
+**`[master 24fbe3c] appended content to merge.tx`**</br>
+**`1 file changed, 1 insertion(+)`**</br>
