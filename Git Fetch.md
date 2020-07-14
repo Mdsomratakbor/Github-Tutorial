@@ -12,3 +12,10 @@
 master</br>
 feature1</br>
 debug2**
+
+`Examining the contents of the /.git/refs/heads/ directory would reveal similar output.`
+
+**ls ./.git/refs/heads/</br>
+master</br>
+feature1</br>
+debug2**
