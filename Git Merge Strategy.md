@@ -39,3 +39,40 @@
 **git merge -s subtree branchA branchB**
 
 `This is an extension of the recursive strategy. When merging A and B, if B is a child subtree of A, B is first updated to reflect the tree structure of A, This update is also done to the common ancestor tree that is shared between A and B.`
+
+### Types of Git Merge Strategies
+
+**Explicit Merges**
+`Explicit merges are the default merge type. The 'explicit' part is that they create a new merge commit. This alters the commit history and explicitly shows where a merge was executed. The merge commit content is also explicit in the fact that it shows which commits were the parents of the merge commit. Some teams avoid explicit merges because arguably the merge commits add "noise" to the history of the project.`
+
+**implicit merge via rebase or fast-forward merge**
+
+`Whereas explicit merges create a merge commit, implicit merges do not. An implicit merge takes a series of commits from a specified branch head and applies them to the top of a target branch. Implicit merges are triggered by rebase events, or fast forward merges. An implicit merge is an ad-hoc selection of commits from a specified branch.`
+
+**Squash on merge, generally without explicit merge**
+
+`Another type of implicit merge is a squash. A squash can be performed during an interactive rebase. A squash merge will take the commits from a target branch and combine or squash them in to one commit. This commit is then appended to the HEAD of the merge base branch. A squash is commonly used to keep a 'clean history' during a merge. The target merge branch can have a verbose history of frequent commits. When squashed and merged the target branches commit history then becomes a singular squashed 'branch commit'. This technique is useful with git workflows that utilize feature branches.`
+
+### Recursive Git Merge Strategy Options
+
+`The 'recursive' strategy introduced above, has its own subset of additional operation options.`
+**ours**
+
+`Not to be confused with the Ours merge strategy. This option conflicts to be auto-resolved cleanly by favoring the 'our' version. Changes from the 'theirs' side are automatically incorporated if they do not conflict.`
+
+**theirs**
+
+`The opposite of the 'ours' strategy. the "theirs" option favors the foreign merging tree in conflict resolution.`
+
+**patience**
+
+`This option spends extra time to avoid mis-merges on unimportant matching lines. This options is best used when branches to be merged have extremely diverged.`
+
+**diff-algorithim**
+
+`This option allows specification of an explicit diff-algorithim. The diff-algorithims are shared with the git diff command.`
+
+**`ignore-*ignore-space-change`**</br>
+**`ignore-all-space`**</br>
+**`ignore-space-at-eol`**</br>
+**`ignore-cr-at-eol`**</br>
